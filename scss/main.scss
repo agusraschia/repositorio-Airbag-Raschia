@@ -1,0 +1,33 @@
+/*imports*/
+
+@import "_header";
+@import "_main";
+@import "_footer";
+@import	"_reset";
+@import "_aside";
+
+// variables
+
+$width:500px;
+$height:600px;
+$bg-bordo:#400D01;
+
+.box-one{
+	width: ($width + 140px)* 3;
+	height: $height / 2;
+	background-color: $bg-bordo;
+}
+
+@each $icono in facebook, twitter, instagram{
+	.#{$icono}-icon{
+		background-image:url(../img/#{$icono}.svg);
+		width: 50px;
+		height: 50px;
+		background-size: 100%;
+		list-style: none;
+	}
+}
+
+
+
+
